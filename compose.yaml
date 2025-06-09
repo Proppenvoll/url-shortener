@@ -1,0 +1,13 @@
+services:
+  url-shortener:
+    build:
+      context: .
+      target: base
+    image: localhost/url-shortener
+    network_mode: host
+    container_name: url-shortener
+    volumes:
+      - ./:/url-shortener
+    command: sleep infinity
+    working_dir: /url-shortener
+    init: true

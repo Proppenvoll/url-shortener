@@ -1,0 +1,11 @@
+.env
+node_modules
+Dockerfile
+compose.yaml
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+/database/*.sqlite
